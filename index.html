@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
+    <title>🎄 Christmas Snake Game 🎅</title>
     <style>
-         body{
-            margin:0px;
-            padding:0px;
-            display:flex;
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background: linear-gradient(to bottom, #ff0000, #ffffff);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
         }
-        canvas{
-            box-shadow: black 20px 10px 50px;
-
+        h1 {
+            font-size: 2.5rem;
+            color: green;
+            text-shadow: 2px 2px 5px red;
+        }
+        canvas {
+            box-shadow: 0 0 20px 5px green, 0 0 20px 10px red inset;
+            border: 5px solid green;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Snake Game</h1>
-    <canvas id="game" width="400" height="400"/>
+    <h1>🎄 Merry Christmas Snake Game 🎁</h1>
+    <canvas id="game" width="400" height="400"></canvas>
+    <img src="santa.png" alt="Santa" style="display:none;">
+    <!-- Optional: Include a background music element -->
+    <!-- <audio src="christmas-music.mp3" autoplay loop></audio> -->
 </body>
 <script src="index.js"></script>
 </html>

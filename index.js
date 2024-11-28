@@ -94,7 +94,7 @@ function isGameOver() {
 
     if (gameOver) {
       ctx.fillStyle = "white";
-      ctx.font = "50px Verdana";
+      ctx.font = "20px Verdana";
 
       var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
       gradient.addColorStop("0", " magenta");
@@ -102,11 +102,13 @@ function isGameOver() {
       gradient.addColorStop("1.0", "red");
       // Fill with gradient
       ctx.fillStyle = gradient;
-
-      ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
+      
+      const scoremessage = "You got ".concat(score.toString());
+      ctx.fillText("You got ".concat(score.toString()), canvas.width / 6.5, canvas.height / 2);
     }
 
-    ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
+    const scoremessage = "You got ".concat(score.toString("presents"));
+    ctx.fillText(scoremessage.concat("presents"), canvas.width / 6.5, canvas.height / 2);
   }
 
   return gameOver;
